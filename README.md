@@ -8,6 +8,8 @@ Here is a screenshot showing that the website looks the same, yet many semantic 
 
 ![Screenshot of my website](assets/images/screenshot.png)
 
+Website URL: https://atefhelmy.github.io/horiseon-accessibility-improvement/
+
 Thank you for taking the time to look at my project and README :)
 
 -Atef Helmy

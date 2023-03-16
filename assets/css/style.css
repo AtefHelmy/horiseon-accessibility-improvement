@@ -17,6 +17,7 @@ header {
     color: #ffffff;
 }
 
+/* I don't think there is anything wrong with the next two selectors after changing header */
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -26,7 +27,9 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-header div {
+/* Because I changed div to nav in header in the HTML file, I am going to change all header div below to header nav */
+
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -34,20 +37,20 @@ header div {
     font-size: 20px;
 }
 
-header div ul {
+header nav ul {
     list-style-type: none;
 }
 
-header div ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* I only see the a element in nav, so this selector seems appropriate for now. However, if another link with different styling were to be added to the page, to select only this link for styling, one could select with header nav ul li a to be more specific*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* This paragraph selector  */
 p {
     font-size: 16px;
 }
@@ -61,6 +64,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/* TODO begin here*/
 
 .float-left {
     float: left;

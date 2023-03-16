@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Changed the title to something descriptive -->
-    <title>Horiseon homepage</title>
+    <title>Horiseon Homepage</title>
     <!-- I read online its always good to throw this viewport element in there -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -31,65 +31,73 @@
     </header>
     <!-- for good practice, I am wrapping everything between the header and the footer in main. This should not affect any of the selectors.-->
     <main>
-        <!-- Searched long and hard for some appropriate element and could only decide on section for the first image. I decided to change the class to firstbackgroundimage -->
-
-        <!-- TODO begin here -->
-
+        <!-- Searched long and hard for some appropriate element and could only decide on figure for the first image. I decided to change the class to firstbackgroundimage -->
         
-        <section class="firstbackgroundimage"></section>
-        <div class="content">
-            <div class="search-engine-optimization" id="search-engine-optimization">
-                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        <figure class="firstbackgroundimage"></figure>
+
+        <!-- Decided to change the below element to article, and make the individual sections inside of it section -->
+        <!-- There are 3 images in this article element, each of which I gave an alt description for -->
+        <article class="content">
+            <section class="search-engine-optimization" id="search-engine-optimization">
+                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Notebook with a drawn bubble saying SEO Search Engine Optimization and doodles of drawings representing various aspects of SEO."/>
                 <h2>Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </p>
-            </div>
-            <div id="online-reputation-management" class="online-reputation-management">
-                <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            </section>
+            <section id="online-reputation-management" class="online-reputation-management">
+                <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Computer with a graph titled Reputation on the screen with a positive trend" />
                 <h2>Online Reputation Management</h2>
                 <p>
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                 </p>
-            </div>
-            <div id="social-media-marketing" class="social-media-marketing">
-                <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            </section>
+            <section id="social-media-marketing" class="social-media-marketing">
+                <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Table with 6 inviduals seated and many social media terms as stickers laid out on the table such as tweet, share, like"/>
                 <h2>Social Media Marketing</h2>
                 <p>
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
                 </p>
-            </div>
-        </div>
-        <div class="benefits">
-            <div class="benefit-lead">
-                <h3>Lead Generation</h3>
-                <img src="./assets/images/lead-generation.png" />
+            </section>
+        </article>
+
+        <!-- Similarly to the above portion, I will call the entire enclosed element on the right side of the page an article, and the 3 sections inside of it section -->
+        <!-- Also similarly to above, gave the 3 images descriptive alts -->
+
+        <!-- The below headings were h3, however they were smaller than the heading in the footer h4. So I changed the h4 in the footer to h3, and the h3 here to h4. I did not want the font size to change, so I looked up the font size for h3, which it originally was, and found it to be 18.72 pixels. Will try to do this in CSS styling -->
+        <article class="benefits">
+            <section class="benefit-lead">
+                <h4>Lead Generation</h4>
+                <img src="./assets/images/lead-generation.png" alt="Small funnel showing cog wheel, representing ideas, becoming money"/>
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
-            </div>
-            <div class="benefit-brand">
-                <h3>Brand Awareness</h3>
-                <img src="./assets/images/brand-awareness.png" />
+            </section>
+            <section class="benefit-brand">
+                <h4>Brand Awareness</h4>
+                <img src="./assets/images/brand-awareness.png" alt="Small torso and head, with the head replaced with a lit lightbulb, representing an idea"/>
                 <p>
                     Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
                 </p>
-            </div>
-            <div class="benefit-cost">
-                <h3>Cost Management</h3>
-                <img src="./assets/images/cost-management.png" />
+            </section>
+            <section class="benefit-cost">
+                <h4>Cost Management</h4>
+                <img src="./assets/images/cost-management.png" alt="Simple image of cog wheel and money symbols"/>
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
-    </div>
+            </section>
+        </article>
 </main>
-    <div class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
+
+<!-- Changed div class footer to simply a footer -->
+<!-- I changed the below heading size to h3. When looking at the original page, it was definitely smaller than the h1 and h2, but with the styling applied in CSS, appeared larger than h3, when it was an h4. So I changed this to h3 -->
+    <footer>
+        <h3>Made with ❤️️ by Horiseon</h3>
         <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
+        &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    <footer>
 </body>
 
 </html>

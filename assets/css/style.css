@@ -50,7 +50,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-/* This paragraph selector  */
+/* This paragraph selector applies to the entire page, perhaps if there were further stylistic changes this might want to be more specific  */
 p {
     font-size: 16px;
 }
@@ -64,8 +64,6 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-/* TODO begin here*/
 
 .float-left {
     float: left;
@@ -83,6 +81,32 @@ p {
     margin-left: 20px;
 }
 
+/* Again compressing the below 3 into 1 */
+
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Again compressing the below 3 into 1 */
+
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+    max-height: 200px;
+}
+
+/* Again compressing the below 3 into 1 */
+
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Changed the location of the below code from earlier on in the file to here because these CSS selectors appear after the above selectors within the HTML file itself as well */
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -94,115 +118,40 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* There were 3 selectors doing the same thing below, combining into one statement */
+
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* Again compressing the below 3 into 1, changing h3 to h4 to reflect HTML changes. To not change the size of the font, changed the font size to 18.72px, which is the same size as native h3 */
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-lead h4, .benefit-brand h4, .benefit-cost h4 {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 18.72px;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/* Again compressing the below 3 into 1 */
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/* Changing the selectors to reflect changing a div class footer to simply a footer */
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* Note that even though we are changing the font size, it is still larger than the new font size of the above h4, and smaller than the native h2 font size */
+footer h3 {
     font-size: 20px;
 }

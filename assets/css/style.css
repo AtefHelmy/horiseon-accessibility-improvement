@@ -50,7 +50,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-/* This paragraph selector  */
+/* This paragraph selector applies to the entire page, perhaps if there were further stylistic changes this might want to be more specific  */
 p {
     font-size: 16px;
 }
@@ -64,8 +64,6 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-/* TODO begin here*/
 
 .float-left {
     float: left;
@@ -94,36 +92,21 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* There were 3 selectors doing the same thing below, combining into one statement */
+
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* Again compressing the below 3 into 1 */
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
+/* Again compressing the below 3 into 1 */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -196,13 +179,11 @@ p {
     font-size: 36px;
 }
 
-.footer {
+/* Changing the selectors to reflect changing a div class footer to simply a footer */
+
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
 }
